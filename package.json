@@ -1,0 +1,36 @@
+{
+  "name": "@ynewtime/play",
+  "version": "0.1.0",
+  "description": "Just for fun.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "watch": "npm run build -- --watch src",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "utils"
+  ],
+  "author": "Stephen Tseng",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^5.12.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ynewtime/play.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ynewtime/play/issues"
+  },
+  "homepage": "https://github.com/Ynewtime/play"
+}
