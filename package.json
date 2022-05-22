@@ -1,6 +1,6 @@
 {
   "name": "@ynewtime/play",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Just for fun.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -23,7 +23,8 @@
   "author": "Stephen Tseng",
   "license": "MIT",
   "devDependencies": {
-    "tsup": "^5.12.8"
+    "tsup": "^5.12.8",
+    "typescript": "^4.6.4"
   },
   "repository": {
     "type": "git",
