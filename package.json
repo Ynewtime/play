@@ -1,6 +1,6 @@
 {
   "name": "@ynewtime/play",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Just for fun.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -13,8 +13,8 @@
     }
   },
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
-    "watch": "npm run build -- --watch src",
+    "build": "vite build",
+    "test": "vitest run",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
@@ -23,8 +23,10 @@
   "author": "Stephen Tseng",
   "license": "MIT",
   "devDependencies": {
-    "tsup": "^5.12.8",
-    "typescript": "^4.6.4"
+    "@types/node": "^17.0.35",
+    "typescript": "^4.6.4",
+    "vite": "^2.9.9",
+    "vitest": "^0.12.9"
   },
   "repository": {
     "type": "git",
